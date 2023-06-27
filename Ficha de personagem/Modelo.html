@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha D&D</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <header>
+        <h1>Ficha de Personagem</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Nome: <input id="nome" type="text"> <br><br>
+                Classe: <select id="classe">
+                    <option id=""></option>
+                    <option id="barb">Bárbaro</option>
+                    <option id="bard">Bardo</option>
+                    <option id="brux">Bruxo</option>
+                    <option id="cle">Clérigo</option>
+                    <option id="drui">Druida</option>
+                    <option id="fei">Feiticeiro</option>
+                    <option id="gue">Guerreiro</option>
+                    <option id="lad">Ladino</option>
+                    <option id="mag">Mago</option>
+                    <option id="mon">Monge</option>
+                    <option id="pala">Paladino</option>
+                    <option id="pat">Patrulheiro</option>
+                </select> <br><br>
+                Raça: <select id="race" onchange='criarCheckbox()'>
+                    <option id=""></option>
+                    <option id="anao">Anão</option>
+                    <option id="elf">Elfo</option>
+                    <option id="half">Halfling</option>
+                    <option id="hum">Humano</option>
+                    <option id="drac">Draconato</option>
+                    <option id="gno">Gnomo</option>
+                    <option id="melf">Meio-elfo</option>
+                    <option id="morc">Meio-Orc</option>
+                    <option id="tief">Tiefling</option>
+                </select>
+                <div id="checkboxContainer"></div>
+            </p>
+            <p style="text-align: center;">
+                -- Calculadora de Atributos --
+            </p>
+            <p>
+                Pontos Disponíveis: <input id="pontosDisponiveis" type="text" value="27" readonly="readonly">
+                &nbsp; &nbsp; Pontos Restante: <input id="pontosRestantes" type="text" value="27" readonly="readonly">
+            </p>
+        </div>
+        <div>
+            <table id="tabelaDePontos">
+                <tr class="cabeçalho">
+                    <th>&nbsp;</th>
+                    <th>Base</th>
+                    <th>&nbsp;</th>
+                    <th>Mod.<br>Racial</th>
+                    <th>&nbsp;</th>
+                    <th>Pontos</th>
+                    <th>Mod.</th>
+                </tr>
+                <tr id="for" class="attribute-row">
+                    <th>FOR</th>
+                    <td id="forBase" class="attribute-base"></td>
+                    <td class="operador">+</td>
+                    <td id="forModRacial" class="racial-modifier"></td>
+                    <td class="operador">=</td>
+                    <td id="forPontuaçao" class="attribute-score"></td>
+                    <td id="forMod" class="attribute-modifier"></td>
+                </tr>
+                <tr id="des" class="attribute-row">
+                    <th>DES</th>
+                    <td id="desBase" class="attribute-base"></td>
+                    <td class="operador">+</td>
+                    <td id="desModRacial" class="racial-modifier"></td>
+                    <td class="operador">=</td>
+                    <td id="desPontuaçao" class="attribute-score"></td>
+                    <td id="desMod" class="attribute-modifier"></td>
+                </tr>
+                <tr id="con" class="attribute-row">
+                    <th>CON</th>
+                    <td id="conBase" class="attribute-base"></td>
+                    <td class="operador">+</td>
+                    <td id="conModRacial" class="racial-modifier"></td>
+                    <td class="operador">=</td>
+                    <td id="conPontuaçao" class="attribute-score"></td>
+                    <td id="conMod" class="attribute-modifier"></td>
+                </tr>
+                <tr id="int" class="attribute-row">
+                    <th>INT</th>
+                    <td id="intBase" class="attribute-base"></td>
+                    <td class="operador">+</td>
+                    <td id="intModRacial" class="racial-modifier"></td>
+                    <td class="operador">=</td>
+                    <td id="intPontuaçao" class="attribute-score"></td>
+                    <td id="intMod" class="attribute-modifier"></td>
+                </tr>
+                <tr id="sab" class="attribute-row">
+                    <th>SAB</th>
+                    <td id="sabBase" class="attribute-base"></td>
+                    <td class="operador">+</td>
+                    <td id="sabModRacial" class="racial-modifier"></td>
+                    <td class="operador">=</td>
+                    <td id="sabPontuaçao" class="attribute-score"></td>
+                    <td id="sabMod" class="attribute-modifier"></td>
+                </tr>
+                <tr id="car" class="attribute-row">
+                    <th>CAR</th>
+                    <td id="carBase" class="attribute-base"></td>
+                    <td class="operador">+</td>
+                    <td id="carModRacial" class="racial-modifier"></td>
+                    <td class="operador">=</td>
+                    <td id="carPontuaçao" class="attribute-score"></td>
+                    <td id="carMod" class="attribute-modifier"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+       <p>&copy; dev leonunes</p> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

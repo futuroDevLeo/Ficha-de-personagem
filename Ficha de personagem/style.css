@@ -1,0 +1,65 @@
+body {
+    background-image: url(https://images.ctfassets.net/swt2dsco9mfe/5j4I9MGSt44T67nDoQuEk7/0a1bd4e9b0814e1bb6df92cf793e53a1/rJGxllAtvbBhYnO.hero.jpg?q=70&w=1920);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 25px;
+    color: #ffffff;
+    width: 600px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#checkboxContainer {
+    margin-bottom: 10px;
+}
+
+#pontosDisponiveis {
+    padding: 0;
+    width: 40px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+#pontosRestantes {
+    padding: 0;
+    width: 40px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font: italic 13px Arial;
+    padding: 10px;
+}
